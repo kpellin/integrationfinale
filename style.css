@@ -1,0 +1,475 @@
+
+
+@font-face
+{
+	font-family: "aniron";
+	src : url('aniron.ttf');
+
+}
+
+@font-face
+{
+
+	font-family: "partybusiness";
+	src : url('partybusiness.ttf');
+}
+
+@font-face
+{
+
+ 	font-family: "tg";
+	src : url('tngani.ttf');
+
+}
+
+/***********Nav-Bar*************/
+li
+{
+	font-family: "aniron";
+}
+
+
+
+.navbar-default /*class du conteneur nav*/
+{
+  background: none;
+  background-color: #E65400;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+header .navbar .cont1 /*placement du text */
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-collapse .navbar-nav li
+{
+	color: #EEEEEE;
+}
+
+.navbar-collapse .navbar-nav li a /*style du texte*/
+{
+	font-size: 1vw;
+	color: #EEEEEE;
+}
+
+/***style du texte dynamique***/
+
+.navbar-collapse .navbar-nav li a:hover
+{
+	text-decoration: underline;
+	color: #FFFBBB;
+}
+
+.navbar-collapse .navbar-nav li a:focus
+{
+	color:  #EEEEEE;
+}
+
+@media (max-width: 1017px)
+{
+	.navbar-collapse .navbar-nav .navbar-text
+	{
+		display: none;
+	}
+
+	.navbar-collapse .navbar-nav li
+	{
+		background-color: #F4772F;
+	}
+}
+
+
+/************Caroucel*****************/
+
+.carousel
+{
+	display: block;
+	margin: 0;
+}
+.carousel-control
+{
+	background: none;
+}
+
+.carousel-inner .item .carousel-caption .sauronis
+{
+	position: absolute;
+	bottom: 4em;
+	font-family: "partybusiness";
+	font-size: 5vw;
+	text-align: center;
+}
+
+.carousel-inner .item .carousel-caption .pleasehelp, .thumbnailconteneur
+{
+	font-size: 2vw;
+}
+
+/**************phrase+pills+Thumbnails*****************/
+
+
+.sectionconteneur
+{
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.phrase_et_navpills
+{
+	display: block;
+}
+
+.wanteddead
+{
+	font-family: "aniron";
+	font-size: 2vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.jt
+{
+	font-family: "tg";
+	font-size: 2vw;
+	color: #E65400;
+}
+
+.aliveif
+{
+	font-size: 1.5vw;
+}
+
+.nav-pills /*positionnement des items du pills*/
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.w
+{
+	font-family: "tg";
+	opacity: 0;
+}
+
+a:hover .w
+{
+	font-family: "tg";
+	opacity: 1;
+	color: #E65400;
+}
+
+/*styles des textes dynamiques du pills*/
+
+.nav-pills .phills a
+{
+	font-family: "aniron";
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: #8C8D8D;
+}
+
+.nav-pills .phills a:hover
+{
+
+	color: #E65400;
+	text-decoration: underline;
+	background-color: #FFFFFF;
+}
+
+.nav-pills .phills a:active
+{
+	background-color: #FFFFFF;
+}
+
+.nav-pills .phills a:focus
+{
+	background-color: #FFFFFF;
+}
+
+/*positionnement des Thumbnails*/
+
+.thumbnailconteneur
+{
+	padding-top: 2vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media(max-width: 768px)
+{
+		.thumbnailconteneur
+		{
+			display: flex;
+			flex-direction: column;
+		}
+}
+
+/* textes Thumbnails*/
+
+section .thumbnailconteneur .caption,.namegandalf,.namearagorn,.namegimli,.textdown1,.textup1,.textdown2,.textup2,.textdown3,.textup3
+
+/*polices sur les textes dans la classe "caption"*/
+
+{
+	font-family: "partybusiness";
+	font-size: 2vw;
+}
+
+
+.thumbnail
+{
+	background-color: black;
+}
+.caption
+{
+	background-color: black;
+}
+
+/*thumbnail 1*/
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .textup1 	/*positionnement reward*/
+{
+	position: absolute;
+	top: 78vw;
+	left: 7vw;
+	background-color: #EEEEEE;
+	opacity: 0.6;
+	border-radius: 10px;
+	width: 20vw;
+	height: 7vw;
+	text-align: center;
+}
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .mille
+{
+	color: #E65400;
+}
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .namegandalf 	/*position "gandalf"*/
+{
+	color: #EEEEEE;
+	position: absolute;
+	top: 89vw;
+	left: 11vw;
+	font-size: 4vw;
+}
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .textdown1
+{
+	font-size: 2.5vw;
+}
+
+/*comportements dynamiques*/
+
+.row :hover .textup1
+{
+	display: none;
+}
+
+.row :hover .namegandalf
+{
+	font-size: 2vw;
+	position: absolute;
+	top: 80vw;
+	left: 15vw;
+}
+
+/*Comportement responsive*/
+
+@media(max-width: 766px)
+{
+	.thumbailconteneur .row .col-1 .thumbnail .caption, .textup1 /*positionnement reward*/
+	{
+		position: absolute;
+		top: 143vw;
+		left: 35%;
+		background-color: #EEEEEE;
+		border-radius: 10px;
+		opacity: 0.7;
+		width: 30vw;
+		height: 8vw;
+		text-align: center;
+		font-size: 3vw;
+	}
+
+	.thumbailconteneur .row .col-1 .thumbnail .caption, .namegandalf /*position "gandalf"*/
+	{
+		color: #EEEEEE;
+		position: absolute;
+		top: 131vw;
+		left: 40vw;
+		font-size: 7vw;
+	}
+}
+
+/*thumbnail 2*/
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .textup2 /*positionnement*/
+{
+	position: absolute;
+	top: 78vw;
+	left: 40vw;
+	background-color: #EEEEEE;
+	border-radius: 10px;
+	opacity: 0.7;
+	width: 20vw;
+	height: 7vw;
+	text-align: center;
+}
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .huit-cent
+{
+	color: #E65400;
+}
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .namearagorn /*positionnement*/
+{
+	color: #EEEEEE;
+	position: absolute;
+	top: 89vw;
+	left: 45vw;
+	font-size: 4vw;
+}
+
+.thumbailconteneur .row .col-1 .thumbnail .caption, .textdown2
+{
+	font-size: 2.5vw;
+}
+
+/*Compportements dynamiques*/
+
+.row :hover .textup2
+{
+	display: none;
+}
+
+.row :hover .namearagorn
+{
+	font-size: 2vw;
+	position: absolute;
+	top: 80vw;
+	left: vw;
+}
+
+/*Comportements responsives*/
+
+@media(max-width: 766px)
+{
+	.thumbailconteneur .row .col-1 .thumbnail .caption, .textup2 /*positionnement reward*/
+	{
+		position: absolute;
+		top: 232vw;
+		left: 35%;
+		background-color: #EEEEEE;
+		border-radius: 10px;
+		opacity: 0.7;
+		width: 30vw;
+		height: 8vw;
+		text-align: center;
+		font-size: 3vw;
+	}
+
+	.thumbailconteneur .row .col-1 .thumbnail .caption, .namearagorn /*position "gandalf"*/
+	{
+		color: #EEEEEE;
+		position: absolute;
+		top: 220vw;
+		left: 40vw;
+		font-size: 7vw;
+	}
+}
+
+
+/*thumbnail 3*/
+
+.imggimli
+{
+	opacity: 0.4;
+}
+
+.thumbnailconteneur .row .col-1 .thumbnail .caption .textup3
+{
+	color: #E65400;
+	font-size: 4vw;
+	position: absolute;
+	top: 78vw;
+	left: 80vw;
+}
+
+.thumbnailconteneur .row .col-1 .thumbnail .caption .namegimli
+{
+	color: #EEEEEE;
+	text-decoration: line-through;
+	text-decoration-color: #E65400;
+	position: absolute;
+	top: 80vw;
+	left: 80vw;
+	font-size: 4vw;
+}
+
+.thumbnailconteneur .row .col-1 .thumbnail .caption .textdown3
+{
+	font-size: 2.5vw;
+}
+
+/*Comportements dynamiques*/
+
+.row :hover .textup3
+{
+	font-weight: bold;
+}
+
+.row :hover .namegimli
+{
+	font-weight: bold;
+}
+
+.row :hover .imggimli
+{
+	opacity: 0.05;
+}
+
+/*Comportements responsives*/
+
+@media(max-width: 766px)
+{
+	.thumbnailconteneur .row .col-1 .thumbnail .caption .textup3
+	{
+		position: absolute;
+		top: 330vw;
+		left: 35%;
+		opacity: 0.7;
+		width: 30vw;
+		height: 8vw;
+		text-align: center;
+		font-size: 6vw;
+	}
+
+		.thumbnailconteneur .row .col-1 .thumbnail .caption .namegimli
+	{
+		color: #EEEEEE;
+		position: absolute;
+		top: 320vw;
+		left: 45%;
+		font-size: 7vw;
+	}
+
+}
+
+@media(max-width: 552px)
+{
+	.caption
+	{
+		display: none;
+	}
+}
