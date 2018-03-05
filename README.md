@@ -2,3 +2,4 @@
 #integra
 #inte
 #git-remote
+#origin
